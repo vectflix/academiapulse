@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Pulse | Student Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="glow-text">Academia Pulse</h2>
+            <p>Complete your academic profile setup</p>
+            
+            <input type="text" id="user-name" placeholder="Full Name">
+            <input type="text" id="school-name" placeholder="School Name">
+            
+            <div class="selection-row">
+                <select id="school-tier">
+                    <option value="National">National School</option>
+                    <option value="Extra County">Extra County</option>
+                    <option value="County">County</option>
+                    <option value="Sub County">Sub County</option>
+                </select>
+                <select id="user-gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="selection-row">
+                <select id="edu-system">
+                    <option value="844">8-4-4 (Form 1-4)</option>
+                    <option value="CBC">CBC (Grade 7-12)</option>
+                </select>
+                <input type="text" id="user-class" placeholder="Form / Grade">
+            </div>
+
+            <div class="avatar-picker">
+                <p>Select Your Avatar</p>
+                <div class="avatar-grid">
+                    <button class="av-btn" onclick="setAvatar('👤')">👤</button>
+                    <button class="av-btn" onclick="setAvatar('🎓')">🎓</button>
+                    <button class="av-btn" onclick="setAvatar('💡')">💡</button>
+                    <button class="av-btn" onclick="setAvatar('✨')">✨</button>
+                </div>
+            </div>
+
+            <button class="peak-btn" onclick="registerUser()">Launch Dashboard</button>
+        </div>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <nav class="top-nav">
+            <div class="logo">Academia<span>Pulse</span></div>
+            <div class="user-pill">
+                <span id="nav-avatar"></span>
+                <span id="nav-name"></span>
+                <button onclick="logout()" class="reset-btn">Reset Account</button>
+            </div>
+        </nav>
+
+        <main class="dashboard-grid">
+            <section class="card">
+                <h3>Current Term Scores (%)</h3>
+                <div class="input-fields">
+                    <div class="in-group"><span>Mathematics</span><input type="number" id="s1" placeholder="0" oninput="runAnalysis()"></div>
+                    <div class="in-group"><span>English</span><input type="number" id="s2" placeholder="0" oninput="runAnalysis()"></div>
+                    <div class="in-group"><span>Sciences</span><input type="number" id="s3" placeholder="0" oninput="runAnalysis()"></div>
+                    <div class="in-group"><span>Humanities</span><input type="number" id="s4" placeholder="0" oninput="runAnalysis()"></div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>Academic Performance Pulse</h3>
+                <canvas id="pulseChart"></canvas>
+            </section>
+
+            <section class="card results-display">
+                <h3>Grading & Points Engine</h3>
+                <div id="stats-output">Enter marks to see your KCSE Points...</div>
+            </section>
+
+            <section class="card scale-settings">
+                <h3>Grading Scale Calibration</h3>
+                <p><small>Define the 'A' Boundary (Default 80):</small></p>
+                <input type="number" id="scale-a" value="80" onchange="runAnalysis()">
+                <p><small>Define the 'C+' Boundary (Default 55):</small></p>
+                <input type="number" id="scale-c" value="55" onchange="runAnalysis()">
+            </section>
+        </main>
+
+        <footer class="dash-footer">
+            <p>© 2026 Academia Pulse | Developed for <strong>Academic analysis</strong></p>
+            <p><small>Cookies Policy | Web by: Justus and Mark</small></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+                                                                 </html>
+
