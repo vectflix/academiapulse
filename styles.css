@@ -1,0 +1,80 @@
+:root {
+    --pulse-blue: #00d2ff;
+    --dark-bg: #020617;
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --border-glow: rgba(0, 210, 255, 0.15);
+}
+
+body {
+    background: radial-gradient(circle at 0% 0%, #0c4a6e, var(--dark-bg));
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Auth Modal */
+.modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.9);
+    display: flex; align-items: center; justify-content: center; z-index: 1000;
+}
+.modal-content {
+    background: #0f172a; padding: 40px; border-radius: 24px;
+    border: 1px solid var(--border-glow); width: 90%; max-width: 420px; text-align: center;
+}
+
+.glow-text {
+    color: var(--pulse-blue);
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%; padding: 12px; margin: 10px 0; border-radius: 12px;
+    border: 1px solid #334155; background: #000; color: #fff; box-sizing: border-box;
+}
+
+.selection-row { display: flex; gap: 10px; }
+
+/* Dashboard Layout */
+.top-nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 30px; background: rgba(0,0,0,0.4); border-bottom: 1px solid var(--border-glow);
+}
+
+.logo { font-size: 1.4rem; font-weight: 800; letter-spacing: -1px; }
+.logo span { color: var(--pulse-blue); }
+
+.user-pill {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--card-bg); padding: 5px 15px; border-radius: 30px; border: 1px solid var(--border-glow);
+}
+
+.dashboard-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px; padding: 25px; max-width: 1300px; margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg); backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glow); border-radius: 20px; padding: 25px;
+}
+
+.in-group {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;
+}
+.in-group input { width: 80px; margin: 0; text-align: center; }
+
+.peak-btn {
+    background: var(--pulse-blue); color: #000; border: none;
+    padding: 14px; border-radius: 12px; font-weight: 700; cursor: pointer;
+    width: 100%; transition: 0.3s; margin-top: 10px;
+}
+.peak-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0, 210, 255, 0.3); }
+
+.reset-btn {
+    background: transparent; color: #94a3b8; border: none; cursor: pointer; font-size: 0.8rem;
+}
+
+footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; }
+
