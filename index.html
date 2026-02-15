@@ -463,12 +463,48 @@
             <div class="page-divider"></div>
             <p>©️ Justus and Mark</p>
             <div class="footer-account">
-                <span>Account: <strong>Vect.ai User</strong></span> | 
-                <span>Repository: <strong>https://music-guessing-api-v3.onrender.com</strong></span>
+                <span>Account: <strong>Kenya Learning Hub</strong></span> | 
+                <span>Repository: <strong>https://github.com/vectflix/academiapulse</strong></span>
             </div>
-            <p><a href="#">Cookie & Privacy Policy</a> | <a href="https://vect-ai-engine.onrender.com">vect.ai Engine</a></p>
+            <p><a href="#">Cookie & Privacy Policy</a> | <a href="https://github.com/vecflix/academiapulse">vect.ai Engine</a></p>
         </footer>
     </main>
 </div>
+    <script>
+    // Scroll Entrance Animation: Makes glass pages slide up as you scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, observerOptions);
+
+    // Apply starting styles and observe all pages
+    document.querySelectorAll('.book-page').forEach(page => {
+        page.style.opacity = "0";
+        page.style.transform = "translateY(40px)";
+        page.style.transition = "all 0.8s cubic-bezier(0.22, 1, 0.36, 1)";
+        observer.observe(page);
+    });
+
+    // Simple Search Filter: High-speed filtering for your 100+ topics
+    const searchBar = document.querySelector('.search-bar input');
+    searchBar.addEventListener('keyup', (e) => {
+        const term = e.target.value.toLowerCase();
+        const topics = document.querySelectorAll('.topic-block');
+        
+        topics.forEach(topic => {
+            const text = topic.innerText.toLowerCase();
+            topic.style.display = text.includes(term) ? "block" : "none";
+        });
+    });
+        </script>
+    
 </body>
 </html>
