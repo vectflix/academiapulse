@@ -3,100 +3,472 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenya Learning Hub | The Infinite Library</title>
+    <title>Kenya Learning Hub | Virtual Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app-container">
-    <aside class="sidebar">
-        <h2>Subjects</h2>
-        <nav class="side-nav">
-            <a href="#bio">Biology (Full)</a>
-            <a href="#chem">Chemistry (Full)</a>
-            <a href="#math">Mathematics</a>
-            <a href="#phy">Physics</a>
-            <a href="#eng">English</a>
-            <a href="#geo">Geography</a>
-            <a href="#hist">History</a>
-            <a href="#agri">Agriculture</a>
-            <a href="#bst">Business Studies</a>
-        </nav>
-    </aside>
+    <nav class="top-nav">
+        <a href="#math">Mathematics</a>
+        <a href="#bio">Biology</a>
+        <a href="#chem">Chemistry</a>
+        <a href="#phy">Physics</a>
+        <a href="#eng">English</a>
+        <a href="#kis">Kiswahili</a>
+        <a href="#geo">Geography</a>
+        <a href="#hist">History</a>
+        <a href="#cre">CRE</a>
+        <a href="#agri">Agriculture</a>
+        <a href="#bst">Business</a>
+        <a href="#comp">Computer</a>
+    </nav>
 
     <main class="content-area">
         <header>
             <h1>Kenya Learning Hub</h1>
+            <p>Complete 8-4-4 & CBC Virtual Repository</p>
             <div class="search-bar">
-                <input type="text" placeholder="Search 100+ Videos & Notes...">
+                <input type="text" placeholder="Search topics, videos, or revision questions...">
             </div>
         </header>
 
-        <section id="bio">
-            <h2 class="subject-header">Biology: The Complete Study</h2>
+        <section id="math" class="book-page">
+            <h2 class="subject-title">Mathematics: Complete Compendium (Form 1 - 4)</h2>
             
-            <div class="mega-topic">
-                <h3>Form 2: The Heart & Transport System</h3>
-                <div class="video-scroll">
-                    <iframe src="https://www.youtube.com/embed/V6uN9S-p1_Y"></iframe>
-                    <iframe src="https://www.youtube.com/embed/fKyljukBE70"></iframe>
-                    <iframe src="https://www.youtube.com/embed/gvZIZHAn_T0"></iframe>
-                    <iframe src="https://www.youtube.com/embed/f_atX-D6Y6c"></iframe>
+            <div class="topic-block">
+                <h3>1. Core Algebra & Number Systems</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/woVIOatbzUs" title="Algebra Foundations" allowfullscreen></iframe>
                 </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>The journey starts with <strong>Natural Numbers</strong>, Factors, and Prime Factorization. As we progress to Form 2 and 3, we master <strong>Quadratic Expressions</strong> and Equations. A quadratic equation is of the form <em>ax² + bx + c = 0</em>. We solve these using factorization, completing the square, or the quadratic formula. In Form 4, we explore <strong>Linear Programming</strong>, where we use inequalities to define regions on a Cartesian plane and optimize objective functions for business scenarios.</p>
+                </div>
+            </div>
 
-                <div class="vast-notes-content">
+            <div class="topic-block">
+                <h3>2. Calculus (Differentiation & Integration)</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/2eGv4Jf5Zp4" title="Calculus Lessons" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p><strong>Differentiation:</strong> This is the process of finding the derivative or gradient function. If <em>y = xⁿ</em>, then <em>dy/dx = nxⁿ⁻¹</em>. We use this to find the equations of tangents and normals to a curve. 
+                    <strong>Integration:</strong> This is the reverse of differentiation. It is primarily used to find the <strong>Area under a Curve</strong> and the volume of solids of revolution. The integral of <em>xⁿ</em> is <em>(xⁿ⁺¹)/(n+1) + C</em>.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Geometry, Trigonometry & Matrices</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/fKyljukBE70" title="Trigonometry" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>We study the properties of circles (Chords and Tangents), 3D Geometry (Angles between lines and planes), and <strong>Trigonometry III</strong>, which involves solving trigonometric equations and graphing sine and cosine waves. <strong>Matrices</strong> are used to solve simultaneous equations and perform transformations like reflection, rotation, and enlargement in the Cartesian plane.</p>
                     
-                    <h4>Detailed Anatomical Breakdown</h4>
-                    <p>The human heart is a myogenic pump located in the thoracic cavity. It is protected by the **Pericardium**, which secretes pericardial fluid to minimize friction during contraction. It consists of four distinct chambers: the right and left atria (receiving chambers) and the right and left ventricles (pumping chambers). The **Left Ventricle** is significantly thicker than the right (by about 3 times) because it must generate enough force to pump blood through the entire systemic circulation, whereas the right only pumps to the lungs.</p>
-                    
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Differentiate <em>y = 2x³ - 5x² + x - 10</em>.</li>
+                            <li>2. Find the inverse of matrix <em>M = [[2, 1], [4, 3]]</em>.</li>
+                            <li>3. Calculate the area of a triangle with sides 5cm, 7cm and an included angle of 60°.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section id="bio" class="book-page">
+            <h2 class="subject-title">Biology: The Complete Compendium (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Classification, Cell Physiology & Nutrition</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/gvZIZHAn_T0" title="Cell Physiology" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>Biology begins with <strong>Classification I & II</strong>, where we use the Binomial Nomenclature system. In <strong>Cell Physiology</strong>, we study Diffusion, Osmosis, and Active Transport. Osmosis is specifically the movement of water molecules from a dilute solution to a concentrated one through a semi-permeable membrane. This is vital for water absorption in plant roots. <strong>Nutrition in Plants</strong> covers Photosynthesis, occurring in the chloroplasts, while <strong>Nutrition in Animals</strong> details the human digestive system, from ingestion to egestion.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Transport in Plants and Animals (The Heart)</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/V6uN9S-p1_Y" title="The Human Heart" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/fKyljukBE70" title="Cardiac Cycle" allowfullscreen></iframe>
+                </div>
+                
+                <div class="vast-notes">
+                    <h4>The Mammalian Heart:</h4>
+                    <p>The heart is a myogenic muscular organ. It consists of the Right/Left Atria and Right/Left Ventricles. The <strong>Left Ventricle</strong> is thicker because it pumps blood to the whole body. The <strong>Cardiac Cycle</strong> involves Atrial Systole, Ventricular Systole, and Diastole. Valves like the Tricuspid and Bicuspid prevent the backflow of blood, ensuring a one-way circulatory system.</p>
                     [attachment_0](attachment)
-                    <h4>The Cardiac Cycle</h4>
-                    <p>1. **Atrial Systole:** The SA Node sends an electrical impulse, causing both atria to contract. Blood is pushed through the Tricuspid and Bicuspid valves into the ventricles.<br>
-                    2. **Ventricular Systole:** The ventricles contract. The pressure closes the AV valves (the 'LUB' sound) and forces the Semi-lunar valves open. Blood enters the Aorta and Pulmonary Artery.<br>
-                    3. **Diastole:** The heart muscle relaxes. The Semi-lunar valves close (the 'DUB' sound) to prevent backflow into the heart.</p>
-                    
-                    <h4>Revision Questions:</h4>
-                    <ul class="revision-box">
-                        <li>Explain why heart muscle (cardiac) never gets fatigued.</li>
-                        <li>Trace the path of a red blood cell from the Vena Cava to the Aorta.</li>
-                        <li>What is the function of Chordae Tendineae in the heart?</li>
-                    </ul>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Genetics, Evolution & Ecology</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/7X8_m8X3_6M" title="Genetics" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>In <strong>Genetics</strong>, we study Mendelian inheritance, DNA replication, and mutations. <strong>Evolution</strong> covers theories like Lamarckism and Darwinism (Natural Selection). Finally, <strong>Ecology</strong> examines the interaction of living organisms with their environment, focusing on energy flow in food chains and webs.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Explain why a red blood cell bursts when placed in distilled water.</li>
+                            <li>2. Trace the path of blood from the vena cava to the aorta.</li>
+                            <li>3. State three pieces of evidence that support the theory of evolution.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="chem">
-            <h2 class="subject-header">Chemistry: Comprehensive Course</h2>
-            <div class="mega-topic">
-                <h3>Form 4: Electrochemistry</h3>
-                <div class="video-scroll">
-                    <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk"></iframe>
-                    <iframe src="https://www.youtube.com/embed/5aTwW1uZ7lQ"></iframe>
-                    <iframe src="https://www.youtube.com/embed/FSyAehMdpyI"></iframe>
+        <section id="chem" class="book-page">
+            <h2 class="subject-title">Chemistry: Comprehensive Repository (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Atomic Structure, Chemical Families & Bonding</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/FSyAehMdpyI" title="Chemical Bonding" allowfullscreen></iframe>
                 </div>
-                <div class="vast-notes-content">
-                    
-                    <h4>Standard Electrode Potentials</h4>
-                    <p>Electrochemistry involves the study of electron transfer. We use the **Standard Hydrogen Electrode (SHE)** as a reference to determine the E° of other elements. A more negative E° value indicates a stronger reducing agent (easier to lose electrons). The **Salt Bridge** is crucial as it completes the circuit and maintains electrical neutrality by allowing ion migration.</p>
-                    
-                    <h4>Industrial Electrolysis: The Downs Cell</h4>
-                    <p>In the extraction of Sodium, molten NaCl is electrolyzed. Calcium Chloride is added to lower the melting point of NaCl from 800°C to 600°C to save energy. Chlorine gas is produced at the Anode, and Sodium metal is collected at the Cathode.</p>
-                    
-                    <h4>Revision Questions:</h4>
-                    <ul class="revision-box">
-                        <li>Calculate the EMF of a cell: Zn(s)/Zn²⁺(aq) // Ag⁺(aq)/Ag(s) given E° values.</li>
-                        <li>Why is it dangerous to electrolyze concentrated Brine without proper ventilation?</li>
-                    </ul>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>Chemistry starts with the <strong>Atomic Structure</strong>: protons, neutrons, and electrons. Elements are organized in the <strong>Periodic Table</strong> into Groups and Periods. In <strong>Chemical Bonding</strong>, we distinguish between Ionic bonds (transfer of electrons) and Covalent bonds (sharing of electrons). Understanding the properties of giant ionic, molecular, and atomic structures is key to predicting melting points and conductivity.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Electrochemistry (Form 4 Core)</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" title="Electrochemistry Part 1" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/5aTwW1uZ7lQ" title="Electrochemistry Part 2" allowfullscreen></iframe>
+                </div>
+                
+                <div class="vast-notes">
+                    <h4>Electrolysis and Redox:</h4>
+                    <p>Electrochemistry involves redox reactions. <strong>Electrolysis</strong> is the decomposition of an electrolyte by an electric current. For example, the <strong>Downs Cell</strong> is used for Sodium extraction. We also study <strong>Voltaic Cells</strong>, which use chemical energy to produce electricity. The <strong>Salt Bridge</strong> is essential for maintaining ionic balance in these cells.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Organic Chemistry & Radioactivity</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/ds2Pz4cttrA" title="Organic Chemistry" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p><strong>Organic Chemistry I & II</strong> cover Alkanes, Alkenes, Alkynes, Alkanols, and Alkanoic Acids. We focus on IUPAC nomenclature and chemical tests like the decolourisation of bromine water to test for unsaturation. <strong>Radioactivity</strong> covers alpha, beta, and gamma radiation, including half-life calculations and industrial applications like carbon dating.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Draw the structure of 2,2-dimethylpropane.</li>
+                            <li>2. State two factors that affect the preferential discharge of ions during electrolysis.</li>
+                            <li>3. Calculate the EMF of a cell: Zn(s)/Zn²⁺(aq) // Cu²⁺(aq)/Cu(s).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section id="phy" class="book-page">
+            <h2 class="subject-title">Physics: Complete Compendium (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Mechanics, Force & Pressure</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/In_Aybr0--Q" title="Introduction to Physics" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/b8fb97UfKoU" title="Pressure Lessons" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>Physics starts with <strong>Measurement</strong> and <strong>Force</strong>. We study the effects of force such as stretching (Hooke's Law) and turning (Moments). <strong>Pressure</strong> is defined as force per unit area ($P = F/A$). In liquids, pressure increases with depth ($P = hρg$). We also cover <strong>Newton’s Laws of Motion</strong>, where the second law ($F = ma$) is fundamental for calculating the motion of bodies under constant force.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Waves, Sound & Optics</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/Ta1aLeOICl4" title="Physics Waves" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>This section covers <strong>Rectilinear Propagation of Light</strong>, Reflection at plane and curved surfaces, and Refraction (Snell's Law). We study <strong>Waves</strong>—both transverse and longitudinal—and their properties like interference and diffraction. <strong>Sound</strong> is explored as a longitudinal wave requiring a medium, focusing on echoes and the speed of sound in different materials.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Electricity, Magnetism & Modern Physics</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/Q-3NNsbiRDg" title="Modern Physics" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>Modern Physics includes the <strong>Photoelectric Effect</strong> (emissions of electrons from metal surfaces), **X-rays**, and **Radioactivity**. In <strong>Electricity</strong>, we move from simple circuits in Form 1 to complex networks, Heating Effect of current, and Electromagnetic Induction (Generators and Transformers) in Form 4.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. State the law of flotation.</li>
+                            <li>2. Define the term 'half-life' of a radioactive substance.</li>
+                            <li>3. Calculate the work done when a force of 50N moves a block through 5 meters.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer>
+        <section id="geo" class="book-page">
+            <h2 class="subject-title">Geography: The Virtual Atlas (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Introduction to Geography & The Solar System</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/gPFuHzrBEM0" title="Intro to Geography" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/uQmhd-h0il0" title="The Earth" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>Geography is divided into <strong>Physical Geography</strong> (natural environment) and <strong>Human Geography</strong> (human activities). We study the <strong>Solar System</strong>, the Earth’s rotation (causing day and night), and revolution (causing seasons). <strong>Map Work</strong> is a core skill, involving the use of grid references, direction, and bearing to interpret topographical maps.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Internal & External Land Forming Processes</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/fJ0UFAvTgE0" title="Minerals and Rocks" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/gg1L58ncqtc" title="Internal Processes" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>We explore <strong>Minerals and Rocks</strong>, identifying igneous, sedimentary, and metamorphic types. <strong>Internal Processes</strong> include Vulcanicity, Faulting, and Folding, which create mountains and rift valleys. <strong>External Processes</strong> involve Weathering, Mass Wasting, and the action of rivers, glaciers, and wind in shaping the landscape.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Human Geography: Agriculture, Industry & Population</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/0Pw6suF07_I" title="Settlement & Population" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>This section focuses on <strong>Agriculture</strong> (crop and livestock farming), **Mining**, **Forestry**, and **Fishing**. We also analyze **Industry**, **Transport and Communication**, and **Population** dynamics, including factors affecting population growth and settlement patterns in Kenya and globally.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Differentiate between a rock and a mineral.</li>
+                            <li>2. State three conditions necessary for the formation of a coral reef.</li>
+                            <li>3. Explain how the ITCZ influences rainfall in Kenya.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section id="hist" class="book-page">
+            <h2 class="subject-title">History & Government: The Kenyan Archive (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Introduction to History, Migration & Early Inhabitants</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/fW_v-Y6n_oM" title="Introduction to History" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>History begins with the study of our origins. We analyze the <strong>Migration and Settlement</strong> of the three main linguistic groups in Kenya: the Bantu, Nilotes, and Cushites. We study their social, economic, and political organizations before the 19th century. Early inhabitants like the Khoisan and Gumba are also discussed, alongside the impact of Indian Ocean Trade on the Coast of East Africa.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Colonial Rule, Struggle for Independence & Nationalism</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/3H4TgQj1V3c" title="Colonial Rule in Kenya" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>This core section covers the <strong>Scramble and Partition of Africa</strong> and the establishment of British colonial rule. We explore African responses, including <strong>Resistance</strong> (Nandi, Agiriama) and <strong>Collaboration</strong> (Maasai, Wanga). The rise of nationalism is studied through the Mau Mau movement and the constitutional path to independence in 1963. We also cover the <strong>World Wars</strong> and their impact on African political awareness.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Government of Kenya, Constitution & Devolution</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/8A8H8O_uH0k" title="Constitution of Kenya" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>We study the <strong>Branches of Government</strong>: The Executive, Legislature, and Judiciary. A major focus is placed on the <strong>2010 Constitution</strong> and the concept of <strong>Devolution</strong> (County Governments). We also analyze the electoral process, the Bill of Rights, and the challenges facing the Kenyan government today.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Name three sources of information on History and Government.</li>
+                            <li>2. State two methods used by the British to establish colonial rule in Kenya.</li>
+                            <li>3. List four functions of the Clerk of the National Assembly.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cre" class="book-page">
+            <h2 class="subject-title">C.R.E: Complete Virtual Bible Study (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Introduction to CRE & The Old Testament</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/t5KxGz0nV4k" title="CRE Lessons" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>We begin with the <strong>Creation stories</strong> in Genesis and the call of Abraham. The syllabus follows the history of Israel: the Exodus, the Sinai Covenant, and the roles of <strong>Prophets</strong> such as Amos, Jeremiah, and Nehemiah. We focus on their teachings about social justice, the judgment of God, and the promise of a New Covenant.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. The New Testament & The Life of Jesus</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/LwH_pXf-P_s" title="New Testament Studies" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>This section details the <strong>Life and Teachings of Jesus Christ</strong>, including his miracles, parables, and his journey to the cross. We study the growth of the early church through the <strong>Acts of the Apostles</strong> and the letters of Paul, focusing on the unity of believers and the fruit of the Holy Spirit.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Christian Ethics & Contemporary Issues</h3>
+                <div class="vast-notes">
+                    <p>The final part of the CRE syllabus applies Christian values to modern life. Topics include <strong>Christianity and Law</strong>, leisure, work, and the environment. We also discuss contemporary challenges like substance abuse, HIV/AIDS, and the Christian approach to wealth and poverty.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="eng" class="book-page">
+            <h2 class="subject-title">English & Literature: Language Mastery (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Grammar, Punctuation & Writing Skills</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/pE_m0q6hG68" title="English Grammar" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>Grammar is the backbone of the English language. We study <strong>Parts of Speech</strong>, Tenses, and the active/passive voice. Writing skills are emphasized through functional writing (letters, reports, minutes) and imaginative compositions. We also cover <strong>Oral Skills</strong>, focusing on pronunciation, intonation, and public speaking techniques.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Literature: Poetry & Oral Literature</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/G6C6S9uFf-4" title="Oral Literature" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p><strong>Oral Literature</strong> involves the study of riddles, proverbs, and folk narratives. We analyze their social functions and stylistic features. In <strong>Poetry</strong>, we learn to analyze tone, mood, and persona, and identify literary devices such as metaphors, similes, and personification.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>3. Literature: The Set Books</h3>
+                <div class="vast-notes">
+                    <p>Students engage with compulsory set texts (Play and Novel) and optional texts. We analyze themes (e.g., corruption, family conflict, change vs. tradition) and characterization. Understanding the plot structure and the author's message is crucial for passing the Literature paper.</p>
+                    <div class="revision-questions">
+                        <h4>Revision Challenge:</h4>
+                        <ul>
+                            <li>1. Rewrite the following sentence in the passive voice: "The student wrote an essay."</li>
+                            <li>2. List three characteristics of a good oral narrative.</li>
+                            <li>3. Define the term 'imagery' as used in poetry.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section id="kis" class="book-page">
+            <h2 class="subject-title">Kiswahili: Lugha na Fasihi (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Sarufi na Matumizi ya Lugha</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/6_I6pG2I0_k" title="Sarufi ya Kiswahili" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Maelezo ya Kina:</h4>
+                    <p>Kiswahili kinajumuisha <strong>Sarufi</strong> (Grammar), ambapo tunajifunza Ngeli za nomino (A-WA, KI-VI, LI-YA n.k.), aina za maneno, na uakifishaji. Pia tunasisitiza <strong>Insha</strong> (Composition) za aina mbalimbali kama vile barua, kumbukumbu, na insha za wasifu. Ustadi wa kusikiliza na kuzungumza unakuzwa kupitia matumizi sahihi ya msamiati.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Fasihi Simulizi na Fasihi Andishi</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/fW_v-Y6n_oM" title="Fasihi Simulizi" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p><strong>Fasihi Simulizi</strong> inahusisha ngano, methali, vitendawili, na ushairi simulizi. Tunachunguza umuhimu wake katika jamii ya sasa. Katika <strong>Fasihi Andishi</strong>, tunasoma vitabu teule (Riwaya, Tamthilia, na Hadithi Fupi), tukichambua maudhui kama vile uongozi mbaya, elimu, na nafasi ya mwanamke.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="agri" class="book-page">
+            <h2 class="subject-title">Agriculture: Science of Farming (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Soil Science & Crop Production</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/S2Y1V8-8f8U" title="Soil Fertility" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <h4>Detailed Notes:</h4>
+                    <p>Agriculture focuses on sustainable production. We study <strong>Soil Fertility</strong> (Macro and Micro-nutrients) and how to maintain it through manuring and fertilizer application. <strong>Crop Production</strong> covers everything from land preparation to harvesting and storage of crops like maize, coffee, and tea. Pest and disease control is also a major focus.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Livestock Production & Farm Machinery</h3>
+                <div class="vast-notes">
+                    <p>We analyze the management of <strong>Livestock</strong> (cattle, sheep, goats, poultry, and bees). Topics include nutrition (feeds), health (disease control), and breeding. Farm machinery and structures, such as fences, stores, and greenhouses, are also discussed to improve farm efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bst" class="book-page">
+            <h2 class="subject-title">Business Studies: Virtual Commerce (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Entrepreneurship & Office Practice</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/9mWg0z3K9pE" title="Business Lessons" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>This subject introduces students to the business world. We cover **Entrepreneurship**, types of business units (Sole Proprietorships to Public Limited Companies), and **Insurance**. Office practice details the roles of various personnel and the importance of efficient communication and filing systems.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Economics & Accounting</h3>
+                <div class="vast-notes">
+                    <p>In the senior forms, we dive into **Economics** (Supply and Demand, Inflation, and International Trade) and **Accounting**. Students learn to record transactions in the Ledger and prepare Financial Statements, including the Cash Book, Trial Balance, and the Balance Sheet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comp" class="book-page">
+            <h2 class="subject-title">Computer Studies: Digital Mastery (Form 1 - 4)</h2>
+            
+            <div class="topic-block">
+                <h3>1. Computer Systems & Application Software</h3>
+                <div class="video-grid">
+                    <iframe src="https://www.youtube.com/embed/In_Aybr0--Q" title="Computer Hardware" allowfullscreen></iframe>
+                </div>
+                <div class="vast-notes">
+                    <p>We start with **Hardware and Software** components. Application areas include Word Processing, Spreadsheets (Excel), and Databases (Access). We study how data is processed and stored in a computer system.</p>
+                </div>
+            </div>
+
+            <div class="topic-block">
+                <h3>2. Networking, Programming & Ethics</h3>
+                <div class="vast-notes">
+                    <p>Advanced topics include **Data Communication and Networking**, where we explore the Internet and LAN/WAN setups. We also introduce **Programming** logic and high-level languages, alongside **Data Security** and the ethical use of computers in society.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="peak-footer">
+            <div class="page-divider"></div>
             <p>©️ Justus and Mark</p>
-            <p><a href="#">Account Settings</a> | <a href="#">Cookie Policy</a></p>
+            <div class="footer-account">
+                <span>Account: <strong>Vect.ai User</strong></span> | 
+                <span>Repository: <strong>https://music-guessing-api-v3.onrender.com</strong></span>
+            </div>
+            <p><a href="#">Cookie & Privacy Policy</a> | <a href="https://vect-ai-engine.onrender.com">vect.ai Engine</a></p>
         </footer>
     </main>
 </div>
-
 </body>
 </html>
