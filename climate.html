@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Climate Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Lab</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="glow">Climate Change Dashboard</h1>
-    <canvas id="climateChart" width="500" height="250"></canvas>
-    <footer>©️ Justus and Mark</footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+<h1 class="glow">Climate Lab</h1>
+<label>Year: <span id="yearValue">2000</span></label><br>
+<input type="range" min="2000" max="2025" value="2000" id="yearSlider">
+<p id="tempDisplay"></p>
+<footer>©️ Justus and Mark</footer>
+<script src="script.js"></script>
 </body>
 </html>

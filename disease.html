@@ -2,14 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Disease Simulation</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disease Simulation</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="glow">Disease Spread Simulation</h1>
-    <button onclick="resetSim()">Reset</button>
-    <canvas id="simCanvas" width="600" height="400" style="background:#1e293b;"></canvas>
-    <footer>©️ Justus and Mark</footer>
-    <script src="script.js"></script>
+<h1 class="glow">Disease Spread Lab</h1>
+<label>Population: <span id="popVal">50</span></label><br>
+<input type="range" min="20" max="150" value="50" id="popSlider">
+<br>
+<canvas id="simCanvas" width="600" height="400"></canvas>
+<footer>©️ Justus and Mark</footer>
+<script src="script.js"></script>
 </body>
 </html>
